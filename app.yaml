@@ -1,0 +1,15 @@
+# https://developers.google.com/appengine/docs/python/config/appconfig
+
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: .*
+  script: main.app
+
+
+# https://developers.google.com/appengine/docs/python/tools/libraries27
+libraries:
+- name: jinja2
+  version: latest
